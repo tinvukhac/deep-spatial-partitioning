@@ -1,29 +1,33 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-* Quick summary
-* Version
+* This project provide a framework for data preparation, training and testing deep learning models for big spatial data partitioning.
+* Version: 0.1
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
+### How to deploy your own models using our framework? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Dataset generators
+* Collect data for training and testing
+* Train the model
+* Use the pre-trained model in your system
 
-### Contribution guidelines ###
+### Dataset generators ###
+* **Option 1**: We published [a paper](http://www.cs.ucr.edu/~eldawy/publications/19_SpatialGems.pdf) at [SpatialGems 2019](https://www.spatialgems.net/) about spatial data generators. 
+ The generators allow you to create synthetic spatial datasets with your desired distribution and dataset size. 
+ The source code is available at [this repository](https://github.com/tinvukhac/spatialdatagenerators).
 
-* Writing tests
-* Code review
-* Other guidelines
+* **Option 2**: You could use your own spatial datasets to generate training and testing data for next steps. 
 
-### Who do I talk to? ###
+### Collect data for training and testing ###
 
-* Repo owner or admin
-* Other community or team contact
+
+
+### Train the model ###
+
+### Use the pre-trained model in your system ###
+
+### Contact ###
+
+* Repo owner: tvu032@ucr.edu
