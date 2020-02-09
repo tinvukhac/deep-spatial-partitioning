@@ -9,7 +9,8 @@
 
 * Dataset generators
 * Collect data for training and testing
-* Train the model
+* Preprocessing
+* Train and test the model
 * Use the pre-trained model in your system
 
 ### Dataset generators ###
@@ -40,17 +41,24 @@ The output is points_dataset.hist, which contains the histogram of the given dat
 We could use this metadata to compute several quality metrics such as total partition area, total partition margin, load balance between partitions, etc.
 
 The question is that given the points_dataset.csv above and many partitioning techniques as R*-Tree, STR, Kd-Tree, Z-Curve, etc, how can we know which technique is the best one to partition your dataset?
-A naive solution is that we partition the dataset using all techniques, collect the corresponding partition metadata, then evaluate them based on the quality metrics. Unfortunately, physical partitioning requires a lot of effort, which makes this solution being not practical. 
+A naive solution is that we can partition the dataset using all techniques, collect the corresponding partition metadata, then evaluate them based on the quality metrics. Unfortunately, physical partitioning requires a lot of effort, which makes this solution being not practical. 
 
 We addressed this problem by providing a new command, named 'mindex'. This command allows you to compute the metadata of partitions for different partitioning techniques **without physical partitioning**, which is significantly faster than the previous solution.   
 
 ```console
-foo@bar:~$ spark-submit beast-uber-spark-0.2.2-SNAPSHOT.jar mindex points_dataset.csv output gindexes:rsgrove,str,kdtree,zcurve 'iformat:point(1,2)' separator:, 
+foo@bar:~$ spark-submit beast-uber-spark-0.2.2-SNAPSHOT.jar mindex points_dataset.csv points_dataset_masters gindexes:rsgrove,str,kdtree,zcurve 'iformat:point(1,2)' separator:, 
 ```
 
-The output directory will contain the partition metadata for all techniques.
+The output directory 'points_dataset_masters' will contain the partition metadata for all techniques: R*-Tree, STR, Kd-Tree and Z-Curve.
 
-### Train the model ###
+### Preprocessing ###
+After collect the histogram and the metadata for all partitioning techniques. We can create one data point for the training/testing purpose as follows:
+* Extract and flatten histogram:
+* Compute the best technique in a specific quality metric:
+
+Those functions could be found in 'preprocessing.py'
+
+### Train and test the model ###
 
 ### Use the pre-trained model in your system ###
 
