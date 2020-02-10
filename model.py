@@ -133,7 +133,8 @@ def get_cnn_input_shape(hist_rows, hist_cols):
     return input_shape
 
 
-def predict_using_saved_model(model_type, hidden_layers, hidden_units, X_test, input_shape):
+def predict_using_saved_model(model_type, hidden_layers, hidden_units, X_test, hist_rows, hist_cols):
+    input_shape = get_cnn_input_shape(hist_rows, hist_cols)
     if model_type == 'fc':
         model = build_fc_model(X_test.shape[1], hidden_layers, hidden_units, NUM_CLASSES)
     else:
@@ -144,7 +145,6 @@ def predict_using_saved_model(model_type, hidden_layers, hidden_units, X_test, i
 
 
 def main():
-    print("Using deep learning for Big Spatial Data partitioning")
 
     model_types = ['fc', 'cnn']
     model_type = model_types[0]

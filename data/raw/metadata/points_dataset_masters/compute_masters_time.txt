@@ -1,0 +1,387 @@
+2019-09-16 02:27:05 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-09-16 02:27:05 INFO  Main:52 - Using master 'spark://ec-hn.cs.ucr.edu:7077'
+
+2019-09-16 02:27:05 INFO  SparkContext:54 - Running Spark version 2.3.0
+2019-09-16 02:27:05 WARN  SparkConf:66 - In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+2019-09-16 02:27:05 INFO  SparkContext:54 - Submitted application: BEAST
+2019-09-16 02:27:06 INFO  SecurityManager:54 - Changing view acls to: tvu032
+2019-09-16 02:27:06 INFO  SecurityManager:54 - Changing modify acls to: tvu032
+2019-09-16 02:27:06 INFO  SecurityManager:54 - Changing view acls groups to: 
+2019-09-16 02:27:06 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2019-09-16 02:27:06 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tvu032); groups with view permissions: Set(); users  with modify permissions: Set(tvu032); groups with modify permissions: Set()
+2019-09-16 02:27:06 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 33633.
+2019-09-16 02:27:06 INFO  SparkEnv:54 - Registering MapOutputTracker
+2019-09-16 02:27:06 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2019-09-16 02:27:06 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2019-09-16 02:27:06 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2019-09-16 02:27:06 INFO  DiskBlockManager:54 - Created local directory at /local_data/dblab/sparktmp/blockmgr-959d5b59-a285-499c-b70f-dcc75b4940cd
+2019-09-16 02:27:06 INFO  MemoryStore:54 - MemoryStore started with capacity 2004.6 MB
+2019-09-16 02:27:06 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2019-09-16 02:27:06 INFO  log:192 - Logging initialized @2392ms
+2019-09-16 02:27:06 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
+2019-09-16 02:27:06 INFO  Server:414 - Started @2491ms
+2019-09-16 02:27:06 INFO  AbstractConnector:278 - Started ServerConnector@62b3df3a{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-09-16 02:27:06 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4163f1cd{/jobs,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3c1e23ff{/jobs/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@ceb4bd2{/jobs/job,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1bf0f6f6{/jobs/job/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@56bc3fac{/stages,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@df4b72{/stages/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2ba45490{/stages/stage,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7af707e0{/stages/stage/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@737edcfa{/stages/pool,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3ecedf21{/stages/pool/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@74cf8b28{/storage,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@36c54a56{/storage/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3359c978{/storage/rdd,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7ba63fe5{/storage/rdd/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@73386d72{/environment,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6f330eb9{/environment/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@125c082e{/executors,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@584f5497{/executors/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@68ace111{/executors/threadDump,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1f9d6c7b{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6df20ade{/static,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2617f816{/,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@676f0a60{/api,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@55b62629{/jobs/job/kill,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@a53bb6f{/stages/stage/kill,null,AVAILABLE,@Spark}
+2019-09-16 02:27:06 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://ec-hn.cs.ucr.edu:4040
+2019-09-16 02:27:06 INFO  SparkContext:54 - Added JAR file:/home/tvu032/beast/deep_indexing/beast-uber-spark-0.0.1-SNAPSHOT.jar at spark://ec-hn.cs.ucr.edu:33633/jars/beast-uber-spark-0.0.1-SNAPSHOT.jar with timestamp 1568626026832
+2019-09-16 02:27:06 INFO  StandaloneAppClient$ClientEndpoint:54 - Connecting to master spark://ec-hn.cs.ucr.edu:7077...
+2019-09-16 02:27:06 INFO  TransportClientFactory:267 - Successfully created connection to ec-hn.cs.ucr.edu/169.235.26.37:7077 after 46 ms (0 ms spent in bootstraps)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Connected to Spark cluster with app ID app-20190916022707-3544
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/0 on worker-20190829212313-172.21.0.12-43792 (172.21.0.12:43792) with 12 core(s)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/0 on hostPort 172.21.0.12:43792 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/1 on worker-20190829212315-172.21.0.13-37290 (172.21.0.13:37290) with 12 core(s)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/1 on hostPort 172.21.0.13:37290 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/2 on worker-20190829212313-172.21.0.4-34741 (172.21.0.4:34741) with 12 core(s)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/2 on hostPort 172.21.0.4:34741 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/3 on worker-20190829212314-172.21.0.6-40649 (172.21.0.6:40649) with 12 core(s)
+2019-09-16 02:27:07 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45714.
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/3 on hostPort 172.21.0.6:40649 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  NettyBlockTransferService:54 - Server created on ec-hn.cs.ucr.edu:45714
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/4 on worker-20190829212315-172.21.0.9-38407 (172.21.0.9:38407) with 12 core(s)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/4 on hostPort 172.21.0.9:38407 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/5 on worker-20190829212314-172.21.0.2-40763 (172.21.0.2:40763) with 12 core(s)
+2019-09-16 02:27:07 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/5 on hostPort 172.21.0.2:40763 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/6 on worker-20190829212313-172.21.0.7-33645 (172.21.0.7:33645) with 12 core(s)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/6 on hostPort 172.21.0.7:33645 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/7 on worker-20190829212314-172.21.0.5-42934 (172.21.0.5:42934) with 12 core(s)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/7 on hostPort 172.21.0.5:42934 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/8 on worker-20190829212312-172.21.0.8-46131 (172.21.0.8:46131) with 12 core(s)
+2019-09-16 02:27:07 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, ec-hn.cs.ucr.edu, 45714, None)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/8 on hostPort 172.21.0.8:46131 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/9 on worker-20190829212315-172.21.0.3-34754 (172.21.0.3:34754) with 12 core(s)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/9 on hostPort 172.21.0.3:34754 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/10 on worker-20190829212315-172.21.0.11-41172 (172.21.0.11:41172) with 12 core(s)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/10 on hostPort 172.21.0.11:41172 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20190916022707-3544/11 on worker-20190829212313-172.21.0.10-32774 (172.21.0.10:32774) with 12 core(s)
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20190916022707-3544/11 on hostPort 172.21.0.10:32774 with 12 core(s), 4.0 GB RAM
+2019-09-16 02:27:07 INFO  BlockManagerMasterEndpoint:54 - Registering block manager ec-hn.cs.ucr.edu:45714 with 2004.6 MB RAM, BlockManagerId(driver, ec-hn.cs.ucr.edu, 45714, None)
+2019-09-16 02:27:07 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, ec-hn.cs.ucr.edu, 45714, None)
+2019-09-16 02:27:07 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, ec-hn.cs.ucr.edu, 45714, None)
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/0 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/1 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/2 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/3 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/5 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/4 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/6 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/9 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/10 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/11 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/8 is now RUNNING
+2019-09-16 02:27:07 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20190916022707-3544/7 is now RUNNING
+2019-09-16 02:27:07 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@226b143b{/metrics/json,null,AVAILABLE,@Spark}
+2019-09-16 02:27:07 INFO  StandaloneSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2019-09-16 02:27:08 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 284.2 KB, free 2004.3 MB)
+2019-09-16 02:27:08 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.6 KB, free 2004.3 MB)
+2019-09-16 02:27:08 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on ec-hn.cs.ucr.edu:45714 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:08 INFO  SparkContext:54 - Created broadcast 0 from newAPIHadoopFile at SpatialReader.java:359
+2019-09-16 02:27:08 INFO  SpatialInputFormat:279 - Created 3 splits in 0.229133 seconds
+2019-09-16 02:27:09 INFO  SparkContext:54 - Starting job: reduce at GeometricSummary.java:99
+2019-09-16 02:27:09 INFO  DAGScheduler:54 - Got job 0 (reduce at GeometricSummary.java:99) with 3 output partitions
+2019-09-16 02:27:09 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (reduce at GeometricSummary.java:99)
+2019-09-16 02:27:09 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-09-16 02:27:09 INFO  DAGScheduler:54 - Missing parents: List()
+2019-09-16 02:27:09 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[3] at mapPartitions at GeometricSummary.java:80), which has no missing parents
+2019-09-16 02:27:09 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 4.9 KB, free 2004.3 MB)
+2019-09-16 02:27:09 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.6 KB, free 2004.3 MB)
+2019-09-16 02:27:09 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on ec-hn.cs.ucr.edu:45714 (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:09 INFO  SparkContext:54 - Created broadcast 1 from broadcast at DAGScheduler.scala:1039
+2019-09-16 02:27:09 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at mapPartitions at GeometricSummary.java:80) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-09-16 02:27:09 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 3 tasks
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.9:42026) with ID 4
+2019-09-16 02:27:09 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, 172.21.0.9, executor 4, partition 0, ANY, 8019 bytes)
+2019-09-16 02:27:09 INFO  TaskSetManager:54 - Starting task 1.0 in stage 0.0 (TID 1, 172.21.0.9, executor 4, partition 1, ANY, 8019 bytes)
+2019-09-16 02:27:09 INFO  TaskSetManager:54 - Starting task 2.0 in stage 0.0 (TID 2, 172.21.0.9, executor 4, partition 2, ANY, 8019 bytes)
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.5:40998) with ID 7
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.11:43000) with ID 10
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.3:38610) with ID 9
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.9:46078 with 2004.6 MB RAM, BlockManagerId(4, 172.21.0.9, 46078, None)
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.6:40008) with ID 3
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.12:45590) with ID 0
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.8:55544) with ID 8
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.13:39146) with ID 1
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.5:43848 with 2004.6 MB RAM, BlockManagerId(7, 172.21.0.5, 43848, None)
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.11:43739 with 2004.6 MB RAM, BlockManagerId(10, 172.21.0.11, 43739, None)
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.3:41289 with 2004.6 MB RAM, BlockManagerId(9, 172.21.0.3, 41289, None)
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.12:34577 with 2004.6 MB RAM, BlockManagerId(0, 172.21.0.12, 34577, None)
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.6:37463 with 2004.6 MB RAM, BlockManagerId(3, 172.21.0.6, 37463, None)
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.10:59944) with ID 11
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.8:46729 with 2004.6 MB RAM, BlockManagerId(8, 172.21.0.8, 46729, None)
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.13:45742 with 2004.6 MB RAM, BlockManagerId(1, 172.21.0.13, 45742, None)
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.10:35423 with 2004.6 MB RAM, BlockManagerId(11, 172.21.0.10, 35423, None)
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.4:53518) with ID 2
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.7:58096) with ID 6
+2019-09-16 02:27:09 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.21.0.2:50662) with ID 5
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.4:35831 with 2004.6 MB RAM, BlockManagerId(2, 172.21.0.4, 35831, None)
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.2:40279 with 2004.6 MB RAM, BlockManagerId(5, 172.21.0.2, 40279, None)
+2019-09-16 02:27:09 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 172.21.0.7:46614 with 2004.6 MB RAM, BlockManagerId(6, 172.21.0.7, 46614, None)
+2019-09-16 02:27:09 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 172.21.0.9:46078 (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:10 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.9:46078 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:18 INFO  TaskSetManager:54 - Finished task 2.0 in stage 0.0 (TID 2) in 9170 ms on 172.21.0.9 (executor 4) (1/3)
+2019-09-16 02:27:19 INFO  TaskSetManager:54 - Finished task 1.0 in stage 0.0 (TID 1) in 9750 ms on 172.21.0.9 (executor 4) (2/3)
+2019-09-16 02:27:19 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 10406 ms on 172.21.0.9 (executor 4) (3/3)
+2019-09-16 02:27:19 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2019-09-16 02:27:19 INFO  DAGScheduler:54 - ResultStage 0 (reduce at GeometricSummary.java:99) finished in 10.889 s
+2019-09-16 02:27:19 INFO  DAGScheduler:54 - Job 0 finished: reduce at GeometricSummary.java:99, took 10.984556 s
+2019-09-16 02:27:20 INFO  SparkContext:54 - Starting job: count at ComputeIndexMetadata.java:79
+2019-09-16 02:27:20 INFO  DAGScheduler:54 - Got job 1 (count at ComputeIndexMetadata.java:79) with 3 output partitions
+2019-09-16 02:27:20 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (count at ComputeIndexMetadata.java:79)
+2019-09-16 02:27:20 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-09-16 02:27:20 INFO  DAGScheduler:54 - Missing parents: List()
+2019-09-16 02:27:20 INFO  DAGScheduler:54 - Submitting ResultStage 1 (MapPartitionsRDD[4] at map at ComputeIndexMetadata.java:79), which has no missing parents
+2019-09-16 02:27:20 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 4.7 KB, free 2004.3 MB)
+2019-09-16 02:27:20 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.6 KB, free 2004.3 MB)
+2019-09-16 02:27:20 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on ec-hn.cs.ucr.edu:45714 (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:20 INFO  SparkContext:54 - Created broadcast 2 from broadcast at DAGScheduler.scala:1039
+2019-09-16 02:27:20 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at map at ComputeIndexMetadata.java:79) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-09-16 02:27:20 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 3 tasks
+2019-09-16 02:27:20 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 3, 172.21.0.7, executor 6, partition 0, ANY, 8019 bytes)
+2019-09-16 02:27:20 INFO  TaskSetManager:54 - Starting task 1.0 in stage 1.0 (TID 4, 172.21.0.9, executor 4, partition 1, ANY, 8019 bytes)
+2019-09-16 02:27:20 INFO  TaskSetManager:54 - Starting task 2.0 in stage 1.0 (TID 5, 172.21.0.10, executor 11, partition 2, ANY, 8019 bytes)
+2019-09-16 02:27:20 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 172.21.0.9:46078 (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:20 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 172.21.0.7:46614 (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:20 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 172.21.0.10:35423 (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:20 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.10:35423 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:20 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.7:46614 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:27 INFO  TaskSetManager:54 - Finished task 1.0 in stage 1.0 (TID 4) in 7881 ms on 172.21.0.9 (executor 4) (1/3)
+2019-09-16 02:27:28 INFO  TaskSetManager:54 - Finished task 2.0 in stage 1.0 (TID 5) in 8837 ms on 172.21.0.10 (executor 11) (2/3)
+2019-09-16 02:27:29 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 3) in 9670 ms on 172.21.0.7 (executor 6) (3/3)
+2019-09-16 02:27:29 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2019-09-16 02:27:29 INFO  DAGScheduler:54 - ResultStage 1 (count at ComputeIndexMetadata.java:79) finished in 9.689 s
+2019-09-16 02:27:29 INFO  DAGScheduler:54 - Job 1 finished: count at ComputeIndexMetadata.java:79, took 9.695173 s
+2019-09-16 02:27:29 INFO  SparkContext:54 - Starting job: collect at ComputeIndexMetadata.java:86
+2019-09-16 02:27:29 INFO  DAGScheduler:54 - Got job 2 (collect at ComputeIndexMetadata.java:86) with 3 output partitions
+2019-09-16 02:27:29 INFO  DAGScheduler:54 - Final stage: ResultStage 2 (collect at ComputeIndexMetadata.java:86)
+2019-09-16 02:27:29 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-09-16 02:27:29 INFO  DAGScheduler:54 - Missing parents: List()
+2019-09-16 02:27:29 INFO  DAGScheduler:54 - Submitting ResultStage 2 (MapPartitionsRDD[6] at map at ComputeIndexMetadata.java:86), which has no missing parents
+2019-09-16 02:27:29 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 4.9 KB, free 2004.3 MB)
+2019-09-16 02:27:29 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.8 KB, free 2004.3 MB)
+2019-09-16 02:27:29 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on ec-hn.cs.ucr.edu:45714 (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:29 INFO  SparkContext:54 - Created broadcast 3 from broadcast at DAGScheduler.scala:1039
+2019-09-16 02:27:29 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ResultStage 2 (MapPartitionsRDD[6] at map at ComputeIndexMetadata.java:86) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-09-16 02:27:29 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 3 tasks
+2019-09-16 02:27:29 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 6, 172.21.0.13, executor 1, partition 0, ANY, 8128 bytes)
+2019-09-16 02:27:29 INFO  TaskSetManager:54 - Starting task 1.0 in stage 2.0 (TID 7, 172.21.0.5, executor 7, partition 1, ANY, 8128 bytes)
+2019-09-16 02:27:29 INFO  TaskSetManager:54 - Starting task 2.0 in stage 2.0 (TID 8, 172.21.0.8, executor 8, partition 2, ANY, 8128 bytes)
+2019-09-16 02:27:30 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 172.21.0.5:43848 (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:30 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 172.21.0.8:46729 (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:30 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 172.21.0.13:45742 (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:30 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.5:43848 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:30 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.8:46729 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:30 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.13:45742 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:38 INFO  BlockManagerInfo:54 - Added taskresult_8 in memory on 172.21.0.8:46729 (size: 6.0 MB, free: 1998.5 MB)
+2019-09-16 02:27:38 INFO  TransportClientFactory:267 - Successfully created connection to /172.21.0.8:46729 after 2 ms (0 ms spent in bootstraps)
+2019-09-16 02:27:38 INFO  TaskSetManager:54 - Finished task 2.0 in stage 2.0 (TID 8) in 9053 ms on 172.21.0.8 (executor 8) (1/3)
+2019-09-16 02:27:38 INFO  BlockManagerInfo:54 - Removed taskresult_8 on 172.21.0.8:46729 in memory (size: 6.0 MB, free: 2004.6 MB)
+2019-09-16 02:27:39 INFO  BlockManagerInfo:54 - Added taskresult_7 in memory on 172.21.0.5:43848 (size: 6.1 MB, free: 1998.4 MB)
+2019-09-16 02:27:39 INFO  TransportClientFactory:267 - Successfully created connection to /172.21.0.5:43848 after 3 ms (0 ms spent in bootstraps)
+2019-09-16 02:27:39 INFO  TaskSetManager:54 - Finished task 1.0 in stage 2.0 (TID 7) in 9892 ms on 172.21.0.5 (executor 7) (2/3)
+2019-09-16 02:27:39 INFO  BlockManagerInfo:54 - Removed taskresult_7 on 172.21.0.5:43848 in memory (size: 6.1 MB, free: 2004.6 MB)
+2019-09-16 02:27:40 INFO  BlockManagerInfo:54 - Added taskresult_6 in memory on 172.21.0.13:45742 (size: 6.0 MB, free: 1998.5 MB)
+2019-09-16 02:27:40 INFO  TransportClientFactory:267 - Successfully created connection to /172.21.0.13:45742 after 1 ms (0 ms spent in bootstraps)
+2019-09-16 02:27:40 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 6) in 11108 ms on 172.21.0.13 (executor 1) (3/3)
+2019-09-16 02:27:40 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2019-09-16 02:27:40 INFO  DAGScheduler:54 - ResultStage 2 (collect at ComputeIndexMetadata.java:86) finished in 11.123 s
+2019-09-16 02:27:40 INFO  DAGScheduler:54 - Job 2 finished: collect at ComputeIndexMetadata.java:86, took 11.129061 s
+2019-09-16 02:27:40 INFO  BlockManagerInfo:54 - Removed taskresult_6 on 172.21.0.13:45742 in memory (size: 6.0 MB, free: 2004.6 MB)
+2019-09-16 02:27:40 INFO  ComputeIndexMetadata:88 - Building a partitioner from 655760 point
+2019-09-16 02:27:40 INFO  SparkContext:54 - Starting job: reduce at GeometricSummary.java:66
+2019-09-16 02:27:40 INFO  DAGScheduler:54 - Got job 3 (reduce at GeometricSummary.java:66) with 3 output partitions
+2019-09-16 02:27:40 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (reduce at GeometricSummary.java:66)
+2019-09-16 02:27:40 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-09-16 02:27:40 INFO  DAGScheduler:54 - Missing parents: List()
+2019-09-16 02:27:40 INFO  DAGScheduler:54 - Submitting ResultStage 3 (MapPartitionsRDD[8] at mapPartitions at GeometricSummary.java:43), which has no missing parents
+2019-09-16 02:27:40 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 5.2 KB, free 2004.3 MB)
+2019-09-16 02:27:40 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 2.8 KB, free 2004.3 MB)
+2019-09-16 02:27:40 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on ec-hn.cs.ucr.edu:45714 (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:40 INFO  SparkContext:54 - Created broadcast 4 from broadcast at DAGScheduler.scala:1039
+2019-09-16 02:27:40 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ResultStage 3 (MapPartitionsRDD[8] at mapPartitions at GeometricSummary.java:43) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-09-16 02:27:40 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 3 tasks
+2019-09-16 02:27:40 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 9, 172.21.0.3, executor 9, partition 0, ANY, 8019 bytes)
+2019-09-16 02:27:40 INFO  TaskSetManager:54 - Starting task 1.0 in stage 3.0 (TID 10, 172.21.0.4, executor 2, partition 1, ANY, 8019 bytes)
+2019-09-16 02:27:40 INFO  TaskSetManager:54 - Starting task 2.0 in stage 3.0 (TID 11, 172.21.0.5, executor 7, partition 2, ANY, 8019 bytes)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 172.21.0.5:43848 (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 172.21.0.4:35831 (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 172.21.0.3:41289 (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.4:35831 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.3:41289 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on ec-hn.cs.ucr.edu:45714 in memory (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on 172.21.0.5:43848 in memory (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on 172.21.0.13:45742 in memory (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on 172.21.0.8:46729 in memory (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on ec-hn.cs.ucr.edu:45714 in memory (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on 172.21.0.9:46078 in memory (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on ec-hn.cs.ucr.edu:45714 in memory (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on 172.21.0.9:46078 in memory (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on 172.21.0.10:35423 in memory (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:41 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on 172.21.0.7:46614 in memory (size: 2.6 KB, free: 2004.6 MB)
+2019-09-16 02:27:48 INFO  TaskSetManager:54 - Finished task 2.0 in stage 3.0 (TID 11) in 7627 ms on 172.21.0.5 (executor 7) (1/3)
+2019-09-16 02:27:50 INFO  TaskSetManager:54 - Finished task 1.0 in stage 3.0 (TID 10) in 9393 ms on 172.21.0.4 (executor 2) (2/3)
+2019-09-16 02:27:51 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 9) in 10463 ms on 172.21.0.3 (executor 9) (3/3)
+2019-09-16 02:27:51 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2019-09-16 02:27:51 INFO  DAGScheduler:54 - ResultStage 3 (reduce at GeometricSummary.java:66) finished in 10.479 s
+2019-09-16 02:27:51 INFO  DAGScheduler:54 - Job 3 finished: reduce at GeometricSummary.java:66, took 10.485237 s
+2019-09-16 02:27:51 INFO  SparkContext:54 - Starting job: reduce at Histogram.java:95
+2019-09-16 02:27:51 INFO  DAGScheduler:54 - Got job 4 (reduce at Histogram.java:95) with 3 output partitions
+2019-09-16 02:27:51 INFO  DAGScheduler:54 - Final stage: ResultStage 4 (reduce at Histogram.java:95)
+2019-09-16 02:27:51 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-09-16 02:27:51 INFO  DAGScheduler:54 - Missing parents: List()
+2019-09-16 02:27:51 INFO  DAGScheduler:54 - Submitting ResultStage 4 (MapPartitionsRDD[9] at mapPartitions at Histogram.java:87), which has no missing parents
+2019-09-16 02:27:51 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 5.5 KB, free 2004.3 MB)
+2019-09-16 02:27:51 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 3.0 KB, free 2004.3 MB)
+2019-09-16 02:27:51 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on ec-hn.cs.ucr.edu:45714 (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:27:51 INFO  SparkContext:54 - Created broadcast 5 from broadcast at DAGScheduler.scala:1039
+2019-09-16 02:27:51 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ResultStage 4 (MapPartitionsRDD[9] at mapPartitions at Histogram.java:87) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-09-16 02:27:51 INFO  TaskSchedulerImpl:54 - Adding task set 4.0 with 3 tasks
+2019-09-16 02:27:51 INFO  TaskSetManager:54 - Starting task 0.0 in stage 4.0 (TID 12, 172.21.0.3, executor 9, partition 0, ANY, 8019 bytes)
+2019-09-16 02:27:51 INFO  TaskSetManager:54 - Starting task 1.0 in stage 4.0 (TID 13, 172.21.0.13, executor 1, partition 1, ANY, 8019 bytes)
+2019-09-16 02:27:51 INFO  TaskSetManager:54 - Starting task 2.0 in stage 4.0 (TID 14, 172.21.0.5, executor 7, partition 2, ANY, 8019 bytes)
+2019-09-16 02:27:51 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 172.21.0.5:43848 (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:27:51 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 172.21.0.13:45742 (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:27:51 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 172.21.0.3:41289 (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:27:58 INFO  TaskSetManager:54 - Finished task 2.0 in stage 4.0 (TID 14) in 7522 ms on 172.21.0.5 (executor 7) (1/3)
+2019-09-16 02:27:59 INFO  TaskSetManager:54 - Finished task 0.0 in stage 4.0 (TID 12) in 7719 ms on 172.21.0.3 (executor 9) (2/3)
+2019-09-16 02:27:59 INFO  TaskSetManager:54 - Finished task 1.0 in stage 4.0 (TID 13) in 7989 ms on 172.21.0.13 (executor 1) (3/3)
+2019-09-16 02:27:59 INFO  TaskSchedulerImpl:54 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2019-09-16 02:27:59 INFO  DAGScheduler:54 - ResultStage 4 (reduce at Histogram.java:95) finished in 8.000 s
+2019-09-16 02:27:59 INFO  DAGScheduler:54 - Job 4 finished: reduce at Histogram.java:95, took 8.015355 s
+2019-09-16 02:27:59 INFO  Histogram:100 - Histogram running time 10.493979+8.028970=18.522949 seconds for MBR + aggregation
+2019-09-16 02:28:01 INFO  ComputeIndexMetadata:125 - Partitioner 'RRStarTreeBBPartitioner' constructed in 1.995489 seconds
+2019-09-16 02:28:07 INFO  ComputeIndexMetadata:125 - Partitioner 'RSGrovePartitioner' constructed in 5.817414 seconds
+2019-09-16 02:28:07 INFO  SpatialPartitioner:61 - Creating an STR tree with 2 levels and a degree of 7. Total number of nodes will be 8
+2019-09-16 02:28:07 INFO  ComputeIndexMetadata:125 - Partitioner 'STRPartitioner' constructed in 0.656710 seconds
+2019-09-16 02:28:09 INFO  ComputeIndexMetadata:125 - Partitioner 'KDTreePartitioner' constructed in 1.611056 seconds
+2019-09-16 02:28:11 INFO  ComputeIndexMetadata:125 - Partitioner 'ZCurvePartitioner' constructed in 1.442753 seconds
+2019-09-16 02:28:11 INFO  ComputeIndexMetadata:125 - Partitioner 'GridPartitioner' constructed in 0.001004 seconds
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on ec-hn.cs.ucr.edu:45714 in memory (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on 172.21.0.5:43848 in memory (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on 172.21.0.13:45742 in memory (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  SparkContext:54 - Starting job: collectAsMap at ComputeIndexMetadata.java:200
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on 172.21.0.3:41289 in memory (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  ContextCleaner:54 - Cleaned accumulator 123
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on ec-hn.cs.ucr.edu:45714 in memory (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  DAGScheduler:54 - Registering RDD 10 (mapPartitionsToPair at ComputeIndexMetadata.java:170)
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on 172.21.0.5:43848 in memory (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on 172.21.0.3:41289 in memory (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  DAGScheduler:54 - Registering RDD 12 (mapToPair at ComputeIndexMetadata.java:200)
+2019-09-16 02:28:11 INFO  DAGScheduler:54 - Got job 5 (collectAsMap at ComputeIndexMetadata.java:200) with 3 output partitions
+2019-09-16 02:28:11 INFO  DAGScheduler:54 - Final stage: ResultStage 7 (collectAsMap at ComputeIndexMetadata.java:200)
+2019-09-16 02:28:11 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 6)
+2019-09-16 02:28:11 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 6)
+2019-09-16 02:28:11 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 5 (MapPartitionsRDD[10] at mapPartitionsToPair at ComputeIndexMetadata.java:170), which has no missing parents
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on 172.21.0.4:35831 in memory (size: 2.8 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  ContextCleaner:54 - Cleaned accumulator 119
+2019-09-16 02:28:11 INFO  ContextCleaner:54 - Cleaned accumulator 114
+2019-09-16 02:28:11 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 12.6 KB, free 2004.3 MB)
+2019-09-16 02:28:11 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 8.2 KB, free 2004.3 MB)
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on ec-hn.cs.ucr.edu:45714 (size: 8.2 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  SparkContext:54 - Created broadcast 6 from broadcast at DAGScheduler.scala:1039
+2019-09-16 02:28:11 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[10] at mapPartitionsToPair at ComputeIndexMetadata.java:170) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-09-16 02:28:11 INFO  TaskSchedulerImpl:54 - Adding task set 5.0 with 3 tasks
+2019-09-16 02:28:11 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 15, 172.21.0.11, executor 10, partition 0, ANY, 8008 bytes)
+2019-09-16 02:28:11 INFO  TaskSetManager:54 - Starting task 1.0 in stage 5.0 (TID 16, 172.21.0.4, executor 2, partition 1, ANY, 8008 bytes)
+2019-09-16 02:28:11 INFO  TaskSetManager:54 - Starting task 2.0 in stage 5.0 (TID 17, 172.21.0.12, executor 0, partition 2, ANY, 8008 bytes)
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 172.21.0.4:35831 (size: 8.2 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 172.21.0.11:43739 (size: 8.2 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 172.21.0.12:34577 (size: 8.2 KB, free: 2004.6 MB)
+2019-09-16 02:28:11 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.11:43739 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:28:12 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 172.21.0.12:34577 (size: 23.6 KB, free: 2004.6 MB)
+2019-09-16 02:28:25 INFO  TaskSetManager:54 - Finished task 1.0 in stage 5.0 (TID 16) in 14056 ms on 172.21.0.4 (executor 2) (1/3)
+2019-09-16 02:28:25 INFO  TaskSetManager:54 - Finished task 2.0 in stage 5.0 (TID 17) in 14286 ms on 172.21.0.12 (executor 0) (2/3)
+2019-09-16 02:28:27 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 15) in 16556 ms on 172.21.0.11 (executor 10) (3/3)
+2019-09-16 02:28:27 INFO  TaskSchedulerImpl:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2019-09-16 02:28:27 INFO  DAGScheduler:54 - ShuffleMapStage 5 (mapPartitionsToPair at ComputeIndexMetadata.java:170) finished in 16.572 s
+2019-09-16 02:28:27 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-09-16 02:28:27 INFO  DAGScheduler:54 - running: Set()
+2019-09-16 02:28:27 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 6, ResultStage 7)
+2019-09-16 02:28:27 INFO  DAGScheduler:54 - failed: Set()
+2019-09-16 02:28:27 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 6 (MapPartitionsRDD[12] at mapToPair at ComputeIndexMetadata.java:200), which has no missing parents
+2019-09-16 02:28:27 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 5.1 KB, free 2004.3 MB)
+2019-09-16 02:28:27 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 2.7 KB, free 2004.3 MB)
+2019-09-16 02:28:27 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on ec-hn.cs.ucr.edu:45714 (size: 2.7 KB, free: 2004.6 MB)
+2019-09-16 02:28:27 INFO  SparkContext:54 - Created broadcast 7 from broadcast at DAGScheduler.scala:1039
+2019-09-16 02:28:27 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[12] at mapToPair at ComputeIndexMetadata.java:200) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-09-16 02:28:27 INFO  TaskSchedulerImpl:54 - Adding task set 6.0 with 3 tasks
+2019-09-16 02:28:27 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 18, 172.21.0.12, executor 0, partition 0, NODE_LOCAL, 7642 bytes)
+2019-09-16 02:28:27 INFO  TaskSetManager:54 - Starting task 1.0 in stage 6.0 (TID 19, 172.21.0.4, executor 2, partition 1, NODE_LOCAL, 7642 bytes)
+2019-09-16 02:28:27 INFO  TaskSetManager:54 - Starting task 2.0 in stage 6.0 (TID 20, 172.21.0.11, executor 10, partition 2, NODE_LOCAL, 7642 bytes)
+2019-09-16 02:28:27 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 172.21.0.4:35831 (size: 2.7 KB, free: 2004.6 MB)
+2019-09-16 02:28:27 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 172.21.0.11:43739 (size: 2.7 KB, free: 2004.6 MB)
+2019-09-16 02:28:27 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 172.21.0.12:34577 (size: 2.7 KB, free: 2004.6 MB)
+2019-09-16 02:28:27 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 1 to 172.21.0.4:53518
+2019-09-16 02:28:27 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 1 to 172.21.0.11:43000
+2019-09-16 02:28:27 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 1 to 172.21.0.12:45590
+2019-09-16 02:28:28 INFO  TaskSetManager:54 - Finished task 2.0 in stage 6.0 (TID 20) in 204 ms on 172.21.0.11 (executor 10) (1/3)
+2019-09-16 02:28:28 INFO  TaskSetManager:54 - Finished task 1.0 in stage 6.0 (TID 19) in 207 ms on 172.21.0.4 (executor 2) (2/3)
+2019-09-16 02:28:28 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 18) in 215 ms on 172.21.0.12 (executor 0) (3/3)
+2019-09-16 02:28:28 INFO  TaskSchedulerImpl:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2019-09-16 02:28:28 INFO  DAGScheduler:54 - ShuffleMapStage 6 (mapToPair at ComputeIndexMetadata.java:200) finished in 0.235 s
+2019-09-16 02:28:28 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-09-16 02:28:28 INFO  DAGScheduler:54 - running: Set()
+2019-09-16 02:28:28 INFO  DAGScheduler:54 - waiting: Set(ResultStage 7)
+2019-09-16 02:28:28 INFO  DAGScheduler:54 - failed: Set()
+2019-09-16 02:28:28 INFO  DAGScheduler:54 - Submitting ResultStage 7 (MapPartitionsRDD[14] at groupByKey at ComputeIndexMetadata.java:200), which has no missing parents
+2019-09-16 02:28:28 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 6.0 KB, free 2004.3 MB)
+2019-09-16 02:28:28 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 3.0 KB, free 2004.3 MB)
+2019-09-16 02:28:28 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on ec-hn.cs.ucr.edu:45714 (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:28:28 INFO  SparkContext:54 - Created broadcast 8 from broadcast at DAGScheduler.scala:1039
+2019-09-16 02:28:28 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ResultStage 7 (MapPartitionsRDD[14] at groupByKey at ComputeIndexMetadata.java:200) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-09-16 02:28:28 INFO  TaskSchedulerImpl:54 - Adding task set 7.0 with 3 tasks
+2019-09-16 02:28:28 INFO  TaskSetManager:54 - Starting task 0.0 in stage 7.0 (TID 21, 172.21.0.12, executor 0, partition 0, NODE_LOCAL, 7653 bytes)
+2019-09-16 02:28:28 INFO  TaskSetManager:54 - Starting task 1.0 in stage 7.0 (TID 22, 172.21.0.11, executor 10, partition 1, NODE_LOCAL, 7653 bytes)
+2019-09-16 02:28:28 INFO  TaskSetManager:54 - Starting task 2.0 in stage 7.0 (TID 23, 172.21.0.4, executor 2, partition 2, NODE_LOCAL, 7653 bytes)
+2019-09-16 02:28:28 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 172.21.0.11:43739 (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:28:28 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 172.21.0.12:34577 (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:28:28 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 172.21.0.11:43000
+2019-09-16 02:28:28 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 172.21.0.12:45590
+2019-09-16 02:28:28 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 172.21.0.4:35831 (size: 3.0 KB, free: 2004.6 MB)
+2019-09-16 02:28:28 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 172.21.0.4:53518
+2019-09-16 02:28:28 INFO  TaskSetManager:54 - Finished task 0.0 in stage 7.0 (TID 21) in 91 ms on 172.21.0.12 (executor 0) (1/3)
+2019-09-16 02:28:28 INFO  TaskSetManager:54 - Finished task 1.0 in stage 7.0 (TID 22) in 90 ms on 172.21.0.11 (executor 10) (2/3)
+2019-09-16 02:28:28 INFO  TaskSetManager:54 - Finished task 2.0 in stage 7.0 (TID 23) in 112 ms on 172.21.0.4 (executor 2) (3/3)
+2019-09-16 02:28:28 INFO  TaskSchedulerImpl:54 - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2019-09-16 02:28:28 INFO  DAGScheduler:54 - ResultStage 7 (collectAsMap at ComputeIndexMetadata.java:200) finished in 0.130 s
+2019-09-16 02:28:28 INFO  DAGScheduler:54 - Job 5 finished: collectAsMap at ComputeIndexMetadata.java:200, took 16.970315 s
+2019-09-16 02:28:28 INFO  ComputeIndexMetadata:214 - Compute master files in 17.195106 seconds
+17.195106
+2019-09-16 02:28:28 INFO  Main:62 - The operation mindex finished in 80.862498 seconds
+2019-09-16 02:28:28 INFO  AbstractConnector:318 - Stopped Spark@62b3df3a{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-09-16 02:28:28 INFO  SparkUI:54 - Stopped Spark web UI at http://ec-hn.cs.ucr.edu:4040
+2019-09-16 02:28:28 INFO  StandaloneSchedulerBackend:54 - Shutting down all executors
+2019-09-16 02:28:28 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asking each executor to shut down
+2019-09-16 02:28:28 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2019-09-16 02:28:28 INFO  MemoryStore:54 - MemoryStore cleared
+2019-09-16 02:28:28 INFO  BlockManager:54 - BlockManager stopped
+2019-09-16 02:28:28 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2019-09-16 02:28:28 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2019-09-16 02:28:28 INFO  SparkContext:54 - Successfully stopped SparkContext
+2019-09-16 02:28:28 INFO  ShutdownHookManager:54 - Shutdown hook called
+2019-09-16 02:28:28 INFO  ShutdownHookManager:54 - Deleting directory /local_data/dblab/sparktmp/spark-d472d3f3-fb70-4bf0-a5f2-b731cac32723
+2019-09-16 02:28:28 INFO  ShutdownHookManager:54 - Deleting directory /local_data/dblab/sparktmp/spark-77eb2c3f-6d94-4ed0-a444-36e8b47d8040
