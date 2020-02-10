@@ -64,8 +64,16 @@ These data points are stored at 'data/train_and_test'.
 We will use these data points for our training and testing purpose. 
 
 ### Train and test the model ###
+* Configure your train and test data and use the 'model.py' to train your model.
+* The final output of the training process should be store at 'models' directory.
 
 ### Use the pre-trained model in your system ###
+* Once you got a pre-trained model that allow you to predict the best partitioning technique in terms of a specific quality metrics, you could easily integrate this model into your partitioning process.
+* The script 'smart_partitioning.py' demonstrate how we can use this pre-trained model to automatically choose the best partitioning technique for a spatial dataset using Beast.
+- Step 1: Compute dataset histogram
+- Step 2: Extract the histogram vector from the output of step 1.
+- Step 3: Given the histogram vector, predict the best partitioning technique using the pre-trained model.
+- Step 4: Use the suggested model to physically partition your dataset.
 
 ### Contact ###
 
