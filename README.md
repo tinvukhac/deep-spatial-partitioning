@@ -53,10 +53,15 @@ The output directory 'points_dataset_masters' will contain the partition metadat
 
 ### Preprocessing ###
 After collect the histogram and the metadata for all partitioning techniques. We can create one data point for the training/testing purpose as follows:
-* Extract and flatten histogram:
-* Compute the best technique in a specific quality metric:
+* Extract and flatten histogram: get the histogram of the dataset and flatten it to a vector.
+* Compute the best technique in a specific quality metric: compute the quality metrics of partitioned files in different partitioning techniques.
 
-Those functions could be found in 'preprocessing.py'
+Those functions could be found in 'preprocessing.py'.
+
+So far, given a dataset, we are able to generate a data point (X, ys) with X is the histogram vector and ys is the label of the best partitioning technique in terms of a specific quality metric. 
+We do this process for thousand of datasets in different histogram sizes.
+These data points are stored at 'data/train_and_test'. 
+We will use these data points for our training and testing purpose. 
 
 ### Train and test the model ###
 
