@@ -150,12 +150,12 @@ def main():
     model_type = model_types[0]
 
     # hist_sizes = ["10x10", "30x30", "50x50", "100x100"]
-    # units = [2, 4, 6, 8, 10]
-    # layers = [1, 2, 3, 4, 5]
+    units = [2, 4, 6, 8, 10]
+    layers = [1, 2, 3, 4, 5]
 
     hist_sizes = ['50x50']
-    units = [10]
-    layers = [2]
+    # units = [10]
+    # layers = [2]
 
     for hist_size in hist_sizes:
         hist_rows, hist_cols = int(hist_size.split('x')[0]), int(hist_size.split('x')[1])
