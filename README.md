@@ -15,6 +15,8 @@
 
 ![alt text](images/overview.png) 
 
+<em>Figure 1: Overview of proposed system</em>
+
 ### Dataset generators 
 * **Option 1**: We published [a paper](http://www.cs.ucr.edu/~eldawy/publications/19_SpatialGems.pdf) at [SpatialGems 2019](https://www.spatialgems.net/) about spatial data generators. 
  The generators allow you to create synthetic spatial datasets with your desired distribution and dataset size. 
@@ -79,6 +81,8 @@ We will use these data points for our training and testing purpose.
 - **Step 5**: Use the suggested model to physically partition your dataset.
 
 ![alt text](images/application_diagram.png) 
+
+<em>Figure 2: Workflow of the partitioning process with pre-trained spatial partitioning selector model</em>
 
 ### Contact
 
