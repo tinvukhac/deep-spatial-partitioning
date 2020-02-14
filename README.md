@@ -13,7 +13,11 @@
 * [Train and test the model](#train-and-test-the-model)
 * [Use the pre-trained model in your system](#use-the-pre-trained-model-in-your-system)
 
-<img src="images/overview.png" width="50" height="50" />
+<div style="text-align:center" markdown="1">
+<p align="center">
+  <img src="https://mouthnasium.s3.amazonaws.com/lodge/jQHDzYF0YKaPgFrtuAqcAG0XN6CblF.png" width="50%" height="50%" align="center"/>
+</p>
+</div>
 
 ### Dataset generators ###
 * **Option 1**: We published [a paper](http://www.cs.ucr.edu/~eldawy/publications/19_SpatialGems.pdf) at [SpatialGems 2019](https://www.spatialgems.net/) about spatial data generators. 
