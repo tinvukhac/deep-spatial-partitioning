@@ -15,16 +15,14 @@
 
 <img src="overview.png" alt="Kitten" title="A cute kitten" width="70%" height="50%" class="center"/>
 
-#dataset-generators
-### Dataset generators ###
+# Dataset generators 
 * **Option 1**: We published [a paper](http://www.cs.ucr.edu/~eldawy/publications/19_SpatialGems.pdf) at [SpatialGems 2019](https://www.spatialgems.net/) about spatial data generators. 
  The generators allow you to create synthetic spatial datasets with your desired distribution and dataset size. 
  The source code is available at [this repository](https://github.com/tinvukhac/spatialdatagenerators).
 
 * **Option 2**: You could use your own spatial datasets to generate training and testing data for next steps. 
 
-#collect-data-for-training-and-testing
-### Collect data for training and testing ###
+# Collect data for training and testing #
 * In this project, we will demonstrate how to apply our deep leearning models to improve the partitioning performance of [SpatialHadoop](http://spatialhadoop.cs.umn.edu/). 
 However, the following steps will not only be applicable for SpatialHadoop but also other systems such as LocationSpark, GeoSpark, Simba, etc.  
 
