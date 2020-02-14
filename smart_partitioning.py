@@ -32,7 +32,7 @@ def main():
 
     print ('Step 4: Partition the input dataset using the suggested partitioning technique...')
     os.system("spark-submit --master {} {} index {} {} gindex:{} 'iformat:point(1,2)' separator:, -overwrite".format(
-        spark_master, jar_file, dataset_path, output_path, best_index))
+        spark_master, jar_file, dataset_path, output_path, gindexs[best_index]))
 
 
 if __name__ == '__main__':

@@ -7,11 +7,13 @@
 
 ### How to deploy your own models using our framework? ###
 
-* Dataset generators
-* Collect data for training and testing
-* Preprocessing
-* Train and test the model
-* Use the pre-trained model in your system
+* [Dataset generators](#dataset-generators)
+* [Collect data for training and testing](#collect-data-for-training-and-testing)
+* [Preprocessing](#preprocessing)
+* [Train and test the model](#train-and-test-the-model)
+* [Use the pre-trained model in your system](#use-the-pre-trained-model-in-your-system)
+
+![alt text](images/overview.png)
 
 ### Dataset generators ###
 * **Option 1**: We published [a paper](http://www.cs.ucr.edu/~eldawy/publications/19_SpatialGems.pdf) at [SpatialGems 2019](https://www.spatialgems.net/) about spatial data generators. 
@@ -71,9 +73,12 @@ We will use these data points for our training and testing purpose.
 * Once you got a pre-trained model that allow you to predict the best partitioning technique in terms of a specific quality metrics, you could easily integrate this model into your partitioning process.
 * The script 'smart_partitioning.py' demonstrate how we can use this pre-trained model to automatically choose the best partitioning technique for a spatial dataset using Beast.
 - **Step 1**: Compute dataset histogram
-- **Step 2**: Extract the histogram vector from the output of step 1.
-- **Step 3**: Given the histogram vector, predict the best partitioning technique using the pre-trained model.
-- **Step 4**: Use the suggested model to physically partition your dataset.
+- **Step 2**: Choose the targeted quality metric to optimize.
+- **Step 3**: Extract the histogram vector from the output of step 1.
+- **Step 4**: Given the histogram vector, predict the best partitioning technique using the pre-trained model.
+- **Step 5**: Use the suggested model to physically partition your dataset.
+
+![alt text](images/application_diagram.png)
 
 ### Contact ###
 

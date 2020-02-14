@@ -147,16 +147,17 @@ def predict_using_saved_model(model_type, hidden_layers, hidden_units, X_test, h
 def main():
 
     model_types = ['fc', 'cnn']
-    model_type = model_types[0]
+    # model_type = model_types[0]
 
     # hist_sizes = ["10x10", "30x30", "50x50", "100x100"]
     units = [2, 4, 6, 8, 10]
-    layers = [1, 2, 3, 4, 5]
+    # layers = [1, 2, 3, 4, 5]
 
     hist_sizes = ['50x50']
     # units = [10]
-    # layers = [2]
+    layers = [3]
 
+    output_f = open('algorithm_selection_varying_units.csv', 'w')
     for hist_size in hist_sizes:
         hist_rows, hist_cols = int(hist_size.split('x')[0]), int(hist_size.split('x')[1])
         features_path = 'data/train_and_test/hist_{0}.csv'.format(hist_size)
@@ -164,18 +165,24 @@ def main():
 
         input_shape = get_cnn_input_shape(hist_rows, hist_cols)
 
-        if model_type == 'fc':
-            X_train, y_train, X_test, y_test = load_data_for_fc(features_path, label_path, 1, 0.8)
-        else:
-            X_train, y_train, X_test, y_test = load_data_for_cnn(features_path, label_path, 1, 0.8, hist_rows,
-                                                                 hist_cols)
+        for model_type in model_types:
+            if model_type == 'fc':
+                X_train, y_train, X_test, y_test = load_data_for_fc(features_path, label_path, 1, 0.8)
+            else:
+                X_train, y_train, X_test, y_test = load_data_for_cnn(features_path, label_path, 1, 0.8, hist_rows,
+                                                                     hist_cols)
 
-        for num_layers in layers:
-            for num_units in units:
-                train_acc, test_acc, elapsed_time, params = train(model_type, num_layers, num_units, X_train, y_train,
-                                                                  X_test, y_test, input_shape)
-                print("{0},{1},{2},{3},{4},{5},{6}".format(hist_size, num_layers, num_units, train_acc, test_acc,
-                                                           elapsed_time, params))
+            for num_layers in layers:
+                for num_units in units:
+                    train_acc, test_acc, elapsed_time, params = train(model_type, num_layers, num_units, X_train,
+                                                                      y_train,
+                                                                      X_test, y_test, input_shape)
+                    print("{0},{1},{2},{3},{4},{5},{6},{7}".format(hist_size, model_type, num_layers, num_units, train_acc, test_acc,
+                                                               elapsed_time, params))
+                    output_f.writelines("{0},{1},{2},{3},{4},{5},{6},{7}\n".format(hist_size, model_type, num_layers, num_units, train_acc, test_acc,
+                                                               elapsed_time, params))
+
+    output_f.close()
 
 
 if __name__ == '__main__':
