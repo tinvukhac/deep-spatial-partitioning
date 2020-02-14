@@ -13,8 +13,9 @@
 * [Train and test the model](#train-and-test-the-model)
 * [Use the pre-trained model in your system](#use-the-pre-trained-model-in-your-system)
 
-<img src="images/overview.png" alt="Kitten" title="A cute kitten" width="150" height="100" />
+<img src="overview.png" alt="Kitten" title="A cute kitten" width="70%" height="50%" class="center"/>
 
+#dataset-generators
 ### Dataset generators ###
 * **Option 1**: We published [a paper](http://www.cs.ucr.edu/~eldawy/publications/19_SpatialGems.pdf) at [SpatialGems 2019](https://www.spatialgems.net/) about spatial data generators. 
  The generators allow you to create synthetic spatial datasets with your desired distribution and dataset size. 
@@ -22,6 +23,7 @@
 
 * **Option 2**: You could use your own spatial datasets to generate training and testing data for next steps. 
 
+#collect-data-for-training-and-testing
 ### Collect data for training and testing ###
 * In this project, we will demonstrate how to apply our deep leearning models to improve the partitioning performance of [SpatialHadoop](http://spatialhadoop.cs.umn.edu/). 
 However, the following steps will not only be applicable for SpatialHadoop but also other systems such as LocationSpark, GeoSpark, Simba, etc.  
@@ -53,6 +55,7 @@ foo@bar:~$ spark-submit beast-uber-spark-0.2.2-SNAPSHOT.jar mindex points_datase
 
 The output directory 'points_dataset_masters' will contain the partition metadata for all techniques: R*-Tree, STR, Kd-Tree and Z-Curve.
 
+#preprocessing
 ### Preprocessing ###
 After collect the histogram and the metadata for all partitioning techniques. We can create one data point for the training/testing purpose as follows:
 * Extract and flatten histogram: get the histogram of the dataset and flatten it to a vector.
@@ -65,10 +68,12 @@ We do this process for thousand of datasets in different histogram sizes.
 These data points are stored at 'data/train_and_test'. 
 We will use these data points for our training and testing purpose. 
 
+#train-and-test-the-model
 ### Train and test the model ###
 * Configure your train and test data and use the 'model.py' to train your model.
 * The final output of the training process should be store at 'models' directory.
 
+#use-the-pre-trained-model-in-your-system
 ### Use the pre-trained model in your system ###
 * Once you got a pre-trained model that allow you to predict the best partitioning technique in terms of a specific quality metrics, you could easily integrate this model into your partitioning process.
 * The script 'smart_partitioning.py' demonstrate how we can use this pre-trained model to automatically choose the best partitioning technique for a spatial dataset using Beast.
