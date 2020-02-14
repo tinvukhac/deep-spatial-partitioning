@@ -1,11 +1,11 @@
 # README #
 
-### What is this repository for? ###
+### What is this repository for? 
 
 * This project provide a framework for data preparation, training and testing deep learning models for big spatial data partitioning.
 * Version: 0.1
 
-### How to deploy your own models using our framework? ###
+### How to deploy your own models using our framework? 
 
 * [Dataset generators](#dataset-generators)
 * [Collect data for training and testing](#collect-data-for-training-and-testing)
@@ -15,14 +15,14 @@
 
 ![alt text](images/overview.png) 
 
-### Dataset generators ###
+### Dataset generators 
 * **Option 1**: We published [a paper](http://www.cs.ucr.edu/~eldawy/publications/19_SpatialGems.pdf) at [SpatialGems 2019](https://www.spatialgems.net/) about spatial data generators. 
  The generators allow you to create synthetic spatial datasets with your desired distribution and dataset size. 
  The source code is available at [this repository](https://github.com/tinvukhac/spatialdatagenerators).
 
 * **Option 2**: You could use your own spatial datasets to generate training and testing data for next steps. 
 
-### Collect data for training and testing ###
+### Collect data for training and testing 
 * In this project, we will demonstrate how to apply our deep leearning models to improve the partitioning performance of [SpatialHadoop](http://spatialhadoop.cs.umn.edu/). 
 However, the following steps will not only be applicable for SpatialHadoop but also other systems such as LocationSpark, GeoSpark, Simba, etc.  
 
@@ -53,7 +53,7 @@ foo@bar:~$ spark-submit beast-uber-spark-0.2.2-SNAPSHOT.jar mindex points_datase
 
 The output directory 'points_dataset_masters' will contain the partition metadata for all techniques: R*-Tree, STR, Kd-Tree and Z-Curve.
 
-### Preprocessing ###
+### Preprocessing 
 After collect the histogram and the metadata for all partitioning techniques. We can create one data point for the training/testing purpose as follows:
 * Extract and flatten histogram: get the histogram of the dataset and flatten it to a vector.
 * Compute the best technique in a specific quality metric: compute the quality metrics of partitioned files in different partitioning techniques.
@@ -65,11 +65,11 @@ We do this process for thousand of datasets in different histogram sizes.
 These data points are stored at 'data/train_and_test'. 
 We will use these data points for our training and testing purpose. 
 
-### Train and test the model ###
+### Train and test the model 
 * Configure your train and test data and use the 'model.py' to train your model.
 * The final output of the training process should be store at 'models' directory.
 
-### Use the pre-trained model in your system ###
+### Use the pre-trained model in your system
 * Once you got a pre-trained model that allow you to predict the best partitioning technique in terms of a specific quality metrics, you could easily integrate this model into your partitioning process.
 * The script 'smart_partitioning.py' demonstrate how we can use this pre-trained model to automatically choose the best partitioning technique for a spatial dataset using Beast.
 - **Step 1**: Compute dataset histogram
@@ -80,6 +80,6 @@ We will use these data points for our training and testing purpose.
 
 ![alt text](images/application_diagram.png) 
 
-### Contact ###
+### Contact
 
 * Repo owner: tvu032@ucr.edu
