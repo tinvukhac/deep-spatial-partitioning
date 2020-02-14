@@ -13,11 +13,7 @@
 * [Train and test the model](#train-and-test-the-model)
 * [Use the pre-trained model in your system](#use-the-pre-trained-model-in-your-system)
 
-<div style="text-align:center" markdown="1">
-<p align="center">
-  <img src="https://mouthnasium.s3.amazonaws.com/lodge/jQHDzYF0YKaPgFrtuAqcAG0XN6CblF.png" width="50%" height="50%" align="center"/>
-</p>
-</div>
+![alt text](images/overview.png) 
 
 ### Dataset generators ###
 * **Option 1**: We published [a paper](http://www.cs.ucr.edu/~eldawy/publications/19_SpatialGems.pdf) at [SpatialGems 2019](https://www.spatialgems.net/) about spatial data generators. 
@@ -82,7 +78,7 @@ We will use these data points for our training and testing purpose.
 - **Step 4**: Given the histogram vector, predict the best partitioning technique using the pre-trained model.
 - **Step 5**: Use the suggested model to physically partition your dataset.
 
-![alt text](images/application_diagram.png) <!-- .element height="50%" width="50%" -->
+![alt text](images/application_diagram.png) 
 
 ### Contact ###
 
