@@ -13,7 +13,7 @@
 * [Train and test the model](#train-and-test-the-model)
 * [Use the pre-trained model in your system](#use-the-pre-trained-model-in-your-system)
 
-![alt text](images/overview.png)
+<img src="images/overview.png" alt="Kitten" title="A cute kitten" width="150" height="100" />
 
 ### Dataset generators ###
 * **Option 1**: We published [a paper](http://www.cs.ucr.edu/~eldawy/publications/19_SpatialGems.pdf) at [SpatialGems 2019](https://www.spatialgems.net/) about spatial data generators. 
