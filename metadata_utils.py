@@ -53,7 +53,7 @@ def get_total_area(partitions):
 def get_total_margin(partitions):
     total_margin = 0
     for p in partitions:
-        total_margin += abs(p.x2 - p.x1) + abs(p.y2 - p.y1) * p.nblocks
+        total_margin += (abs(p.x2 - p.x1) + abs(p.y2 - p.y1)) * p.nblocks
     return total_margin
 
 
